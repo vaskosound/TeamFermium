@@ -7,7 +7,7 @@ using System.Text;
 /// </summary>
 
 
-class BattleField
+class BattleField1
 {
     
 
@@ -81,7 +81,8 @@ class BattleField
 
     public static int GrymOtQsnoNebe(int[,] arr, int n, int x, int y)
     {
-        int[,] expl;
+        int[,] expl; 
+
         switch (arr[x, y]) // zadava ni koi vid bomba imame
         {
             case 1: expl = минаЕдно; break;
@@ -149,7 +150,7 @@ class BattleField
     public static void InitiateGame()
     {
         int n = 10;
-        Console.Write("Welcome to \"Battle Field\" game.\nEnter battle field size: n = ");
+        Console.Write("Welcome to \"Battle Field\" game.\nEnter battle type size: n = ");
         int.TryParse(Console.ReadLine(), out n);
         while (n < 1 || n > 10)
         {
