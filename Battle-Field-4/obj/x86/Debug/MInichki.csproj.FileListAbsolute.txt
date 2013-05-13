@@ -3,3 +3,8 @@ C:\Users\Валери\Desktop\Battle-Field\Battle-Field-4\bin\Debug\BattleField.
 C:\Users\Валери\Desktop\Battle-Field\Battle-Field-4\obj\x86\Debug\MInichki.csprojResolveAssemblyReference.cache
 C:\Users\Валери\Desktop\Battle-Field\Battle-Field-4\obj\x86\Debug\BattleField.exe
 C:\Users\Валери\Desktop\Battle-Field\Battle-Field-4\obj\x86\Debug\BattleField.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\obj\x86\Debug\BattleField.exe
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\obj\x86\Debug\BattleField.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\bin\Debug\BattleField.exe
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\bin\Debug\BattleField.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\obj\x86\Debug\MInichki.csprojResolveAssemblyReference.cache
