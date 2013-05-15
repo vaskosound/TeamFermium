@@ -8,3 +8,8 @@ C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\obj\x86\Debug\BattleF
 C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\bin\Debug\BattleField.exe
 C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\bin\Debug\BattleField.pdb
 C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\obj\x86\Debug\MInichki.csprojResolveAssemblyReference.cache
+C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\obj\x86\Debug\BattleField.exe
+C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\obj\x86\Debug\BattleField.pdb
+C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\obj\x86\Debug\MInichki.csprojResolveAssemblyReference.cache
+C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\bin\Debug\BattleField.exe
+C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\bin\Debug\BattleField.pdb
