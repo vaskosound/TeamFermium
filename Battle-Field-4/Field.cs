@@ -32,6 +32,7 @@ namespace BattleField
         public Field(int dimension)
         {
             this.Dimension = dimension;
+            this.MatrixForField = new int[dimension, dimension];
         }
 
         public void FillTheField()
@@ -62,7 +63,41 @@ namespace BattleField
 
         public void Print()
         {
-            throw new System.NotImplementedException();
+            int dimension = this.Dimension;
+            int[,] arr = this.MatrixForField;
+
+            Console.Write(" ");
+            for (int i = 0; i < dimension; i++)
+            {
+                Console.Write(" {0}", i);
+            }
+
+            Console.WriteLine();
+
+            Console.Write("  ");
+            for (int i = 0; i < dimension * 2; i++)
+            {
+                Console.Write("-");
+            }
+
+            Console.WriteLine();
+
+            for (int i = 0; i < dimension; i++)
+            {
+                Console.Write("{0}|", i);
+                for (int j = 0; j < dimension; j++)
+                {
+                    char cellValue;
+                    switch (arr[i, j])
+                    {
+                        case 0: cellValue = '-'; break;
+                        case -1: cellValue = 'X'; break;
+                        default: cellValue = (char)('0' + arr[i, j]); break;
+                    }
+                    Console.Write("{0} ", cellValue);
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
