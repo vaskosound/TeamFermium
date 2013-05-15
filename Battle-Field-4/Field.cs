@@ -32,7 +32,25 @@ namespace BattleField
         public int[,] MatrixForField
         {
             get { return this.matrixForField; }
-            set { this.matrixForField = value; }
+            set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("matrixForField", "Matrix for field is missing.");
+                }
+                else if(value.GetLength(0)!=value.GetLength(1))
+                {
+                    throw new ArgumentException("Matrix should be square.","matrixForField");
+                }
+                else if (value.GetLength(0) > 10 || value.GetLength(0) < 0)
+                {
+                    throw new ArgumentException("Matrix size shoud be between 1 and 10 including", "matrixForField");
+                }
+                else
+                {
+                    this.matrixForField = value;
+                }
+            }
         }
 
         public Field(int dimension)
