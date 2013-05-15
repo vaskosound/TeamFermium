@@ -7,14 +7,14 @@ namespace BattleField
 {
     public class Field
     {
-        private int dimension;
+        private int size;
         private int[,] matrixForField;
 
-        public int Dimension
+        public int Size
         {
             get
             {
-                return this.dimension;
+                return this.size;
             }
             set
             {
@@ -24,7 +24,7 @@ namespace BattleField
                 }
                 else
                 {
-                    this.dimension = value;
+                    this.size = value;
                 }
             }
         }
@@ -53,32 +53,32 @@ namespace BattleField
             }
         }
 
-        public Field(int dimension)
+        public Field(int size)
         {
-            this.Dimension = dimension;
-            this.MatrixForField = new int[dimension, dimension];
+            this.Size = size;
+            this.MatrixForField = new int[size, size];
         }
 
         public void FillTheField()
         {
             Random random = new Random(); //vhoid i inicializaciq na n i matricata;
 
-            int dimension = this.Dimension;
+            int size = this.Size;
             int[,] arr = this.MatrixForField;
-            int minPercentOfMines = 15 * dimension * dimension / 100;
-            int maxPercentOfMines = 30 * dimension * dimension / 100;
+            int minPercentOfMines = 15 * size * size / 100;
+            int maxPercentOfMines = 30 * size * size / 100;
 
-            int mineNumber = random.Next(minPercentOfMines, maxPercentOfMines + 1); 
+            int numberOfMines = random.Next(minPercentOfMines, maxPercentOfMines + 1); 
 
-            for (int i = 0; i < mineNumber; i++)
+            for (int i = 0; i < numberOfMines; i++)
             {
-                int row = random.Next(0, dimension);
-                int col = random.Next(0, dimension);
+                int row = random.Next(0, size);
+                int col = random.Next(0, size);
 
                 while (arr[row, col] != 0)
                 {
-                    row = random.Next(0, dimension);
-                    col = random.Next(0, dimension);
+                    row = random.Next(0, size);
+                    col = random.Next(0, size);
                 }
 
                 arr[row, col] = random.Next(1, 6);
@@ -87,11 +87,11 @@ namespace BattleField
 
         public void Print()
         {
-            int dimension = this.Dimension;
+            int size = this.Size;
             int[,] arr = this.MatrixForField;
 
             Console.Write(" ");
-            for (int i = 0; i < dimension; i++)
+            for (int i = 0; i < size; i++)
             {
                 Console.Write(" {0}", i);
             }
@@ -99,17 +99,17 @@ namespace BattleField
             Console.WriteLine();
 
             Console.Write("  ");
-            for (int i = 0; i < dimension * 2; i++)
+            for (int i = 0; i < size * 2; i++)
             {
                 Console.Write("-");
             }
 
             Console.WriteLine();
 
-            for (int i = 0; i < dimension; i++)
+            for (int i = 0; i < size; i++)
             {
                 Console.Write("{0}|", i);
-                for (int j = 0; j < dimension; j++)
+                for (int j = 0; j < size; j++)
                 {
                     char cellValue;
                     switch (arr[i, j])
