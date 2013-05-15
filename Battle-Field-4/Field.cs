@@ -18,8 +18,14 @@ namespace BattleField
             }
             set
             {
-                //Do we need a check?
-                this.dimension = value;
+                if (value <= 0 || value > 10)
+                {
+                    throw new ArgumentOutOfRangeException("dimension", "The dimension of the matrix should be between 1 and 10");
+                }
+                else
+                {
+                    this.dimension = value;
+                }
             }
         }
 
