@@ -13,17 +13,30 @@ namespace BattleField
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.type;
             }
             set
             {
+                if (value < 1 || value > 5)
+                {
+                    throw new ArgumentException("Mine type should be between 1 and 5");
+                }
+                else
+                {
+                    this.type = value;
+                }
             }
         }
 
-        private int[,] GetExplodeType(int[,] field, int x, int y)
+        public Mine(int mineType)
+        {
+            this.Type = mineType;
+        }
+
+        public int[,] ExplodeType()
         {
             int[,] explodeType = new int[5, 5];
-            switch (field[x, y])
+            switch (this.Type)
             {
                 case 1: explodeType = MineType.minePowerOne;
                     break;
@@ -40,11 +53,6 @@ namespace BattleField
             }
 
             return explodeType;
-        }
-
-        public int Explode()
-        {
-            throw new System.NotImplementedException();
-        }
+        }       
     }
 }
