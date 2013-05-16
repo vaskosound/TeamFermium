@@ -1,0 +1,12 @@
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\Mines\bin\Debug\Mines.exe.config
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\Mines\bin\Debug\Mines.exe
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\Mines\bin\Debug\Mines.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\Mines\obj\Debug\Mines.csprojResolveAssemblyReference.cache
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\Mines\obj\Debug\Mines.exe
+C:\Users\VASKO\Documents\GitHub\TeamFermium\Battle-Field-4\Mines\obj\Debug\Mines.pdb
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\Mines\bin\Debug\Mines.exe.config
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\Mines\obj\Debug\Mines.exe
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\Mines\obj\Debug\Mines.pdb
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\Mines\bin\Debug\Mines.exe
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\Mines\bin\Debug\Mines.pdb
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\Mines\obj\Debug\Mines.csprojResolveAssemblyReference.cache

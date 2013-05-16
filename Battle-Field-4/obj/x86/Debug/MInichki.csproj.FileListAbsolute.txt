@@ -13,3 +13,5 @@ C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\obj\x86\Debug\
 C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\obj\x86\Debug\MInichki.csprojResolveAssemblyReference.cache
 C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\bin\Debug\BattleField.exe
 C:\Users\Валери\Documents\GitHub\TeamFremium\Battle-Field-4\bin\Debug\BattleField.pdb
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\obj\x86\Debug\BattleField.exe
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\Battle-Field-4\obj\x86\Debug\BattleField.pdb
