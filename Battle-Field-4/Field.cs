@@ -31,7 +31,10 @@ namespace BattleField
 
         public int[,] MatrixForField
         {
-            get { return this.matrixForField; }
+            get
+            {
+                return this.matrixForField;
+            }
             set
             {
                 if (value == null)
@@ -90,33 +93,35 @@ namespace BattleField
             int size = this.Size;
             int[,] arr = this.MatrixForField;
 
+            //Print the numeration of cols
             Console.Write(" ");
-            for (int i = 0; i < size; i++)
+            for (int col = 0; col < size; col++)
             {
-                Console.Write(" {0}", i);
+                Console.Write(" {0}", col);
             }
 
             Console.WriteLine();
 
             Console.Write("  ");
-            for (int i = 0; i < size * 2; i++)
+            for (int col = 0; col < size * 2; col++)
             {
                 Console.Write("-");
             }
 
             Console.WriteLine();
 
-            for (int i = 0; i < size; i++)
+            for (int row = 0; row < size; row++)
             {
-                Console.Write("{0}|", i);
-                for (int j = 0; j < size; j++)
+                Console.Write("{0}|", row);
+                for (int col = 0; col < size; col++)
                 {
                     char cellValue;
-                    switch (arr[i, j])
+                    switch (arr[row, col])
                     {
                         case 0: cellValue = '-'; break;
+                        //when it is already exploded
                         case -1: cellValue = 'X'; break;
-                        default: cellValue = (char)('0' + arr[i, j]); break;
+                        default: cellValue = (char)('0' + arr[row, col]); break;
                     }
                     Console.Write("{0} ", cellValue);
                 }
