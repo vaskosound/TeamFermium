@@ -69,10 +69,7 @@ namespace BattleField
             int size = this.Size;
             int[,] arr = this.MatrixForField;
 
-            int minPercentOfMines = 15 * size * size / 100;
-            int maxPercentOfMines = 30 * size * size / 100;
-
-            int numberOfMines = randomGen.Next(minPercentOfMines, maxPercentOfMines + 1);
+            int numberOfMines = GenerateNumberOfMines();
 
             for (int i = 0; i < numberOfMines; i++)
             {
@@ -89,7 +86,17 @@ namespace BattleField
             }
         }
 
-        public void Print()
+        public int GenerateNumberOfMines() 
+        {
+            Random randomGen = new Random();
+            int minPercentOfMines = 15 * this.Size * this.Size / 100;
+            int maxPercentOfMines = 30 * this.Size * this.Size / 100;
+
+            int numberOfMines = randomGen.Next(minPercentOfMines, maxPercentOfMines + 1);
+            return numberOfMines;
+        }
+
+        public void PrintField()
         {
             int size = this.Size;
             int[,] arr = this.MatrixForField;
@@ -104,7 +111,7 @@ namespace BattleField
             Console.WriteLine();
 
             Console.Write("  ");
-            for (int col = 0; col < size * 2; col++)
+            for (int col = 1; col < size * 2; col++)
             {
                 Console.Write("-");
             }
