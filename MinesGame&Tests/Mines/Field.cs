@@ -8,6 +8,7 @@ namespace BattleField
     public class Field
     {
         private int size;
+        private int numberOfMines;
         private int[,] matrixForField;
 
         public int Size
@@ -26,6 +27,18 @@ namespace BattleField
                 {
                     this.size = value;
                 }
+            }
+        }
+
+        public int NumberOfMines
+        {
+            get
+            {
+                return this.numberOfMines;
+            }
+            set
+            {
+                this.numberOfMines = value;
             }
         }
 
@@ -56,9 +69,10 @@ namespace BattleField
             }
         }
 
-        public Field(int size)
+        public Field(int size, int numberOfMines)
         {
             this.Size = size;
+            this.NumberOfMines = numberOfMines;
             this.MatrixForField = new int[size, size];
         }
 
@@ -69,9 +83,7 @@ namespace BattleField
             int size = this.Size;
             int[,] arr = this.MatrixForField;
 
-            int numberOfMines = GenerateNumberOfMines();
-
-            for (int i = 0; i < numberOfMines; i++)
+            for (int i = 0; i < this.NumberOfMines; i++)
             {
                 int row = randomGen.Next(0, size);
                 int col = randomGen.Next(0, size);
@@ -84,16 +96,6 @@ namespace BattleField
 
                 arr[row, col] = randomGen.Next(1, 6);
             }
-        }
-
-        public int GenerateNumberOfMines() 
-        {
-            Random randomGen = new Random();
-            int minPercentOfMines = 15 * this.Size * this.Size / 100;
-            int maxPercentOfMines = 30 * this.Size * this.Size / 100;
-
-            int numberOfMines = randomGen.Next(minPercentOfMines, maxPercentOfMines + 1);
-            return numberOfMines;
         }
 
         public void PrintField()

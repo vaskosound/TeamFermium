@@ -36,7 +36,6 @@ namespace BattleField
 
         public int ExplodeMine(int[,] field, int x, int y)
         {
-
             Mine mine = new Mine(field[x, y]);
             int[,] explodeType = mine.ExplodeType();
             int explodeMinesCount = 0;
@@ -103,10 +102,11 @@ namespace BattleField
 
         public void MakeATurn()
         {
-            Field field = new Field(this.GameField);
+            int minesNumber = GenerateNumberOfMines();
+            Field field = new Field(this.GameField, minesNumber);
+
             field.FillTheField();
-            field.PrintField();
-            int minesNumber = field.GenerateNumberOfMines();
+            field.PrintField();            
             int turns = 0;
             while (minesNumber > 0)
             {
@@ -116,7 +116,18 @@ namespace BattleField
                 //Console.WriteLine("Mines Blowed this round: {0}",explodedMines);
                 turns++;
             }
-            Console.WriteLine("Game over -> detonated mines：{0}", turns);
+            Console.WriteLine("Game over -> detonated mines: {0}", turns);
         }
+
+        private int GenerateNumberOfMines()
+        {
+            Random randomGen = new Random();
+            int minPercentOfMines = 15 * this.GameField * this.GameField / 100;
+            int maxPercentOfMines = 30 * this.GameField * this.GameField / 100;
+
+            int numberOfMines = randomGen.Next(minPercentOfMines, maxPercentOfMines + 1);
+            return numberOfMines;
+        }
+
     }
 }
