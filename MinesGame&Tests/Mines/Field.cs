@@ -41,9 +41,9 @@ namespace BattleField
                 {
                     throw new ArgumentNullException("matrixForField", "Matrix for field is missing.");
                 }
-                else if(value.GetLength(0)!=value.GetLength(1))
+                else if (value.GetLength(0) != value.GetLength(1))
                 {
-                    throw new ArgumentException("Matrix should be square.","matrixForField");
+                    throw new ArgumentException("Matrix should be square.", "matrixForField");
                 }
                 else if (value.GetLength(0) > 10 || value.GetLength(0) < 0)
                 {
@@ -64,27 +64,28 @@ namespace BattleField
 
         public void FillTheField()
         {
-            Random random = new Random(); //vhoid i inicializaciq na n i matricata;
+            Random randomGen = new Random();
 
             int size = this.Size;
             int[,] arr = this.MatrixForField;
+
             int minPercentOfMines = 15 * size * size / 100;
             int maxPercentOfMines = 30 * size * size / 100;
 
-            int numberOfMines = random.Next(minPercentOfMines, maxPercentOfMines + 1); 
+            int numberOfMines = randomGen.Next(minPercentOfMines, maxPercentOfMines + 1);
 
             for (int i = 0; i < numberOfMines; i++)
             {
-                int row = random.Next(0, size);
-                int col = random.Next(0, size);
+                int row = randomGen.Next(0, size);
+                int col = randomGen.Next(0, size);
 
                 while (arr[row, col] != 0)
                 {
-                    row = random.Next(0, size);
-                    col = random.Next(0, size);
+                    row = randomGen.Next(0, size);
+                    col = randomGen.Next(0, size);
                 }
 
-                arr[row, col] = random.Next(1, 6);
+                arr[row, col] = randomGen.Next(1, 6);
             }
         }
 

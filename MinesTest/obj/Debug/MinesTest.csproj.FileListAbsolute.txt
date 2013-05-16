@@ -1,6 +1,0 @@
-D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\MinesTest.dll
-D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\MinesTest.pdb
-D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\Mines.exe
-D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\Mines.pdb
-D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\obj\Debug\MinesTest.dll
-D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\obj\Debug\MinesTest.pdb

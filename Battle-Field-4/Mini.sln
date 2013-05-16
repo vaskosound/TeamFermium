@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MInichki", "MInichki.csproj", "{148DFEA2-F686-4839-BE3C-CCB486EB3E4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mines", "Mines\Mines.csproj", "{AB45AE56-BC41-4772-A03E-B90BD6C4E0F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mines", "..\MinesGame&Tests\Mines\Mines.csproj", "{AB45AE56-BC41-4772-A03E-B90BD6C4E0F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesTest", "..\MinesTest\MinesTest.csproj", "{EE7266D1-56A0-4C85-94ED-434244416616}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesTest", "..\MinesGame&Tests\MinesTest\MinesTest.csproj", "{EE7266D1-56A0-4C85-94ED-434244416616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,13 @@
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\MinesTest.dll
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\MinesTest.pdb
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\Mines.exe
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\bin\Debug\Mines.pdb
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\obj\Debug\MinesTest.dll
+D:\TelerikAcademy\KPK\TeamProject\Battle-Field-4\TeamFermium\MinesTest\obj\Debug\MinesTest.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Debug\MinesTest.dll
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Debug\MinesTest.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Debug\Mines.exe
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Debug\Mines.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\obj\Debug\MinesTest.csprojResolveAssemblyReference.cache
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\obj\Debug\MinesTest.dll
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\obj\Debug\MinesTest.pdb
