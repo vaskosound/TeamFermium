@@ -21,6 +21,20 @@ namespace Mines.Test
             Mine mine = new Mine(0);
         }
 
+
+        [TestMethod]
+        public void TestCreateMineWithBorderCase()
+        {
+            Mine mine = new Mine(1);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestCreateMineWithNegative()
+        {
+            Mine mine = new Mine(-1);
+        }
+
         [TestMethod]
         public void TestCreateMineWithICorrectType()
         {
