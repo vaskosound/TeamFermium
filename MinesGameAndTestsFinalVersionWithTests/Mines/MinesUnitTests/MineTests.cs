@@ -56,7 +56,59 @@ namespace Mines.Test
         }
 
         [TestMethod]
-        public void TestMethodExplodeTypeWithCorrectData()
+        public void TestMethodExplodeTypeWithCorrectDataTypeOne()
+        {
+            Mine mine = new Mine(1);
+            int[,] expected = {{0,0,0,0,0},
+                            {0,1,0,1,0},
+                            {0,0,1,0,0},
+                            {0,1,0,1,0},
+                            {0,0,0,0,0}};
+            int[,] actual = mine.ExplodeType();
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestMethodExplodeTypeWithCorrectDataTypeTow()
+        {
+            Mine mine = new Mine(2);
+            int[,] expected = {{0,0,0,0,0},
+                            {0,1,1,1,0},
+                            {0,1,1,1,0},
+                            {0,1,1,1,0},
+                            {0,0,0,0,0}};
+            int[,] actual = mine.ExplodeType();
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestMethodExplodeTypeWithCorrectDataTypeThree()
+        {
+            Mine mine = new Mine(3);
+            int[,] expected = {{0,0,1,0,0},
+                            {0,1,1,1,0},
+                            {1,1,1,1,1},
+                            {0,1,1,1,0},
+                            {0,0,1,0,0}};
+            int[,] actual = mine.ExplodeType();
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestMethodExplodeTypeWithCorrectDataTypeFive()
+        {
+            Mine mine = new Mine(5);
+            int[,] expected = {{1,1,1,1,1},
+                            {1,1,1,1,1},
+                            {1,1,1,1,1},
+                            {1,1,1,1,1},
+                            {1,1,1,1,1}};
+            int[,] actual = mine.ExplodeType();
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestMethodExplodeTypeWithCorrectDataTypeFour()
         {
             Mine mine = new Mine(4);
             int[,] expected = {{0,1,1,1,0},
