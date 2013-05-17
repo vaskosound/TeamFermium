@@ -7,6 +7,9 @@ namespace BattleField
 {
     public class Field
     {
+        private const int MIN_FIELD_SIZE = 1;
+        private const int MAX_FIELD_SIZE = 10;
+
         private int size;
         private int numberOfMines;
         private int[,] matrixForField;
@@ -20,7 +23,7 @@ namespace BattleField
             }
             set
             {
-                if (value <= 0 || value > 10)
+                if (value < MIN_FIELD_SIZE || value > MAX_FIELD_SIZE)
                 {
                     throw new ArgumentOutOfRangeException("dimension", "The dimension of the matrix should be between 1 and 10");
                 }
@@ -59,7 +62,7 @@ namespace BattleField
                 {
                     throw new ArgumentException("Matrix should be square.", "matrixForField");
                 }
-                else if (value.GetLength(0) > 10 || value.GetLength(0) < 0)
+                else if (value.GetLength(0) > MAX_FIELD_SIZE || value.GetLength(0) < MIN_FIELD_SIZE)
                 {
                     throw new ArgumentException("Matrix size shoud be between 1 and 10 including", "matrixForField");
                 }
@@ -98,31 +101,33 @@ namespace BattleField
             }
         }
 
-        public void PrintField()
+        public string PrintField()
         {
             int size = this.Size;
             int[,] matrix = this.MatrixForField;
 
+            StringBuilder result = new StringBuilder();
+
             //Print the numeration of cols
-            Console.Write(" ");
+            result.Append(" ");
             for (int col = 0; col < size; col++)
             {
-                Console.Write(" {0}", col);
+                result.Append(String.Format(" {0}", col));
             }
 
-            Console.WriteLine();
+            result.AppendLine();
 
-            Console.Write("  ");
+            result.Append("  ");
             for (int col = 1; col < size * 2; col++)
             {
-                Console.Write("-");
+                result.Append("-");
             }
 
-            Console.WriteLine();
+            result.AppendLine();
 
             for (int row = 0; row < size; row++)
             {
-                Console.Write("{0}|", row);
+                result.Append(String.Format("{0}|", row));
                 for (int col = 0; col < size; col++)
                 {
                     char cellValue;
@@ -133,10 +138,12 @@ namespace BattleField
                         case -1: cellValue = 'X'; break;
                         default: cellValue = (char)('0' + matrix[row, col]); break;
                     }
-                    Console.Write("{0} ", cellValue);
+                    result.Append(String.Format("{0} ", cellValue));
                 }
-                Console.WriteLine();
+                result.AppendLine();
             }
+
+            return result.ToString();
         }
     }
 }

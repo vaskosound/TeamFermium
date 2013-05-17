@@ -60,15 +60,23 @@ namespace BattleField
 
                 if (coordinates.Length == 2)
                 {
-                    row = int.Parse(coordinates[0]);
-                    col = int.Parse(coordinates[1]);
-                    if (row < 0 || row >= field.GetLength(0) || col < 0 || col >= field.GetLength(1))
+                    if (!(int.TryParse(coordinates[0], out row) || int.TryParse(coordinates[1], out col)))
                     {
                         Console.WriteLine("Invalid move!");
                     }
                     else
                     {
-                        isInvalid = false;
+                        row = int.Parse(coordinates[0]);
+                        col = int.Parse(coordinates[1]);
+
+                        if (row < 0 || row >= field.GetLength(0) || col < 0 || col >= field.GetLength(1))
+                        {
+                            Console.WriteLine("Invalid move!");
+                        }
+                        else
+                        {
+                            isInvalid = false;
+                        }
                     }
                 }
                 else
@@ -103,7 +111,7 @@ namespace BattleField
             Field field = new Field(size, minesNumber);
 
             field.FillTheField();
-            field.PrintField();
+            Console.WriteLine(field.PrintField());
 
             this.Field = field;
         }
@@ -118,7 +126,7 @@ namespace BattleField
                 int explodedMines = ExplodeMine(this.Field.MatrixForField);
                 minesNumber -= explodedMines;
 
-                this.Field.PrintField();
+                Console.WriteLine(this.Field.PrintField());
 
                 turns++;
             }

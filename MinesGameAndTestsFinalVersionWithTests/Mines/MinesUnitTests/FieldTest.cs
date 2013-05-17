@@ -9,6 +9,27 @@ namespace MinesUnitTests
     public class FieldTest
     {
         [TestMethod]
+        public void PrintRegularTest()
+        {
+            Field field = new Field(5, 8);
+        
+            Random fixedRandomGen = new Random(8);
+        
+            Type type = typeof(Field);
+            var fieldValue = type.GetField("randomGen", BindingFlags.Instance | BindingFlags.NonPublic);
+            fieldValue.SetValue(field, fixedRandomGen);
+        
+            field.FillTheField();
+
+            string expected = 
+                "  0 1 2 3 4\r\n  ---------\r\n0|- 5 - 3 - \r\n1|4 - - - 3 \r\n2|- - 5 - - \r\n3|- - - - - \r\n4|2 5 5 - - \r\n";
+
+            string actual = field.PrintField();
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void ConstructorRegularTest()
         {
             Field field = new Field(4, 4);
