@@ -11,7 +11,7 @@ namespace BattleField
         static void Main(string[] args)
         {
             GameEngine gamePlay = new GameEngine();
-            gamePlay.initiateGame();
+            gamePlay.InitiateGame();
         }
     }
 }

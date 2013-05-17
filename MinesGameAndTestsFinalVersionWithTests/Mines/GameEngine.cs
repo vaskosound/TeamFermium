@@ -15,8 +15,11 @@ namespace BattleField
             private set { this.field = value; }
         }
 
-        private int ExplodeMine(int[,] field, int row, int col)
+        private int ExplodeMine(int[,] field)
         {
+            int row = 0, col = 0;
+            SetNextMinePosition(field, out row, out col);
+
             Mine mine = new Mine(field[row, col]);
             int[,] explodeType = mine.ExplodeType();
 
@@ -34,7 +37,6 @@ namespace BattleField
                             {
                                 explodeMinesCount++;
                             }
-
                             field[row + i, col + j] = -1;
                         }
                     }
@@ -44,9 +46,10 @@ namespace BattleField
             return explodeMinesCount;
         }
 
-        private int SetNextMinePositionAndReturnExplodedMines(int [,] field)
+        private void SetNextMinePosition(int [,] field, out int row, out int col)
         {
-            int row = 0, col = 0;
+            row = 0;
+            col = 0;
             bool isInvalid = true;
             while (isInvalid)
             {
@@ -60,7 +63,9 @@ namespace BattleField
                     row = int.Parse(coordinates[0]);
                     col = int.Parse(coordinates[1]);
                     if (row < 0 || row >= field.GetLength(0) || col < 0 || col >= field.GetLength(1))
+                    {
                         Console.WriteLine("Invalid move!");
+                    }
                     else
                     {
                         isInvalid = false;
@@ -79,8 +84,6 @@ namespace BattleField
                     }
                 }
             }
-
-            return ExplodeMine(field, row, col);
         }
 
         private int GenerateNumberOfMines(int sizeOfField)
@@ -112,7 +115,7 @@ namespace BattleField
             int turns = 0;
             while (minesNumber > 0)
             {
-                int explodedMines = SetNextMinePositionAndReturnExplodedMines(this.Field.MatrixForField);
+                int explodedMines = ExplodeMine(this.Field.MatrixForField);
                 minesNumber -= explodedMines;
 
                 this.Field.PrintField();
@@ -137,7 +140,7 @@ namespace BattleField
             return size;
         }
 
-        public void initiateGame()
+        public void InitiateGame()
         {
             int size = GetInitialSize();
 

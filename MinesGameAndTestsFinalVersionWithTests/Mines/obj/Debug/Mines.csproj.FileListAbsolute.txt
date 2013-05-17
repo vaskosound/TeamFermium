@@ -28,3 +28,9 @@ C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\obj\D
 C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\bin\Debug\Mines.exe
 C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\bin\Debug\Mines.pdb
 C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\obj\Debug\Mines.csprojResolveAssemblyReference.cache
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGameAndTestsFinalVersionWithTests\Mines\bin\Debug\Mines.exe.config
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGameAndTestsFinalVersionWithTests\Mines\obj\Debug\Mines.exe
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGameAndTestsFinalVersionWithTests\Mines\obj\Debug\Mines.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGameAndTestsFinalVersionWithTests\Mines\bin\Debug\Mines.exe
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGameAndTestsFinalVersionWithTests\Mines\bin\Debug\Mines.pdb
+C:\Users\VASKO\Documents\GitHub\TeamFermium\MinesGameAndTestsFinalVersionWithTests\Mines\obj\Debug\Mines.csprojResolveAssemblyReference.cache
