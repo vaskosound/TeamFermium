@@ -22,6 +22,20 @@ namespace Mines.Test
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestCreateMineWithILowerType()
+        {
+            Mine mine = new Mine(1);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestCreateMineWithILowerType()
+        {
+            Mine mine = new Mine(-1);
+        }
+
+        [TestMethod]
         public void TestCreateMineWithICorrectType()
         {
             Mine mine = new Mine(4);
@@ -33,10 +47,10 @@ namespace Mines.Test
         {
             Mine mine = new Mine(4);
             int[,] expected = {{0,1,1,1,0},
-                            {0,1,1,1,1},
-                            {1,1,1,1,1},
-                            {1,1,1,1,1},
-                            {0,1,1,1,0}};
+                               {0,1,1,1,1},
+                               {1,1,1,1,1},
+                               {1,1,1,1,1},
+                               {0,1,1,1,0}};
             int[,] actual = mine.ExplodeType();
             CollectionAssert.AreNotEqual(expected, actual);
         }

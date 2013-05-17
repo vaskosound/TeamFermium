@@ -1,0 +1,7 @@
+C:\Users\Tati\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Release\MinesTest.dll
+C:\Users\Tati\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Release\MinesTest.pdb
+C:\Users\Tati\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Release\Mines.exe
+C:\Users\Tati\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\bin\Release\Mines.pdb
+C:\Users\Tati\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\obj\Release\MinesTest.csprojResolveAssemblyReference.cache
+C:\Users\Tati\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\obj\Release\MinesTest.dll
+C:\Users\Tati\Documents\GitHub\TeamFermium\MinesGame&Tests\MinesTest\obj\Release\MinesTest.pdb
