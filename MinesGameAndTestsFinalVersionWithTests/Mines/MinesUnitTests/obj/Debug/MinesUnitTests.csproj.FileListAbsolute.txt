@@ -1,0 +1,7 @@
+C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\MinesUnitTests\bin\Debug\MinesUnitTests.dll
+C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\MinesUnitTests\bin\Debug\MinesUnitTests.pdb
+C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\MinesUnitTests\bin\Debug\Mines.exe
+C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\MinesUnitTests\bin\Debug\Mines.pdb
+C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\MinesUnitTests\obj\Debug\MinesUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\MinesUnitTests\obj\Debug\MinesUnitTests.dll
+C:\Users\Валери\Documents\GitHub\TeamFermium\MinesGameAndTests\Mines\MinesUnitTests\obj\Debug\MinesUnitTests.pdb
